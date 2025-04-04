@@ -72,17 +72,19 @@ import vuetifyjs from '../app/assets/svg/skills/vuetifyjs.svg';
 import webix from '../app/assets/svg/skills/webix.svg';
 import wolframalpha from '../app/assets/svg/skills/wolframalpha.svg';
 import wordpress from '../app/assets/svg/skills/wordpress.svg';
-
 import pandas from '../app/assets/svg/skills/pandas.svg';
 import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
 import dotnet from '../app/assets/svg/skills/dotnet.svg';
-import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
-import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
-import linux from '../app/assets/svg/skills/linux.svg'
-import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
-import fastapi from '../app/assets/svg/skills/fastapi.svg'
+import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg';
+import kubernetes from '../app/assets/svg/skills/kubernetes.svg';
+import linux from '../app/assets/svg/skills/linux.svg';
+import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg';
+import fastapi from '../app/assets/svg/skills/fastapi.svg';
 
-
+// Import new skill icons
+import spring from '../app/assets/svg/skills/spring.svg';
+import jenkins from '../app/assets/svg/skills/jenkins.svg';
+import websocket from '../app/assets/svg/skills/websocket.svg';
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -177,81 +179,37 @@ export const skillsImage = (skill) => {
       return django;
     case 'firebase':
       return firebase;
-    case 'gimp':
-      return gimp;
     case 'git':
       return git;
     case 'graphql':
       return graphql;
-    case 'lightroom':
-      return lightroom;
-    case 'materialui':
-      return materialui;
     case 'nginx':
       return nginx;
     case 'numpy':
       return numpy;
-    case 'opencv':
-      return opencv;
-    case 'premiere pro':
-      return premierepro;
-    case 'pytorch':
-      return pytorch;
     case 'selenium':
       return selenium;
-    case 'strapi':
-      return strapi;
     case 'tensorflow':
       return tensorflow;
-    case 'webix':
-      return webix;
     case 'wordpress':
       return wordpress;
     case 'azure':
       return azure;
-    case 'blender':
-      return blender;
-    case 'fastify':
-      return fastify;
-    case 'figma':
-      return figma;
-    case 'flutter':
-      return flutter;
-    case 'haxe':
-      return haxe;
-    case 'ionic':
-      return ionic;
-    case 'markdown':
-      return markdown;
-    case 'microsoft office':
-      return microsoftoffice;
-    case 'picsart':
-      return picsart;
-    case 'sketch':
-      return sketch;
-    case 'unity':
-      return unity;
-    case 'wolframalpha':
-      return wolframalpha;
-    case 'canva':
-      return canva;
-    case 'pandas':
-      return pandas;
-    case 'sklearn':
-      return scikitlearn;
-    case '.net':
-      return dotnet;
-    case '.net core':
-      return dotnetcore
     case 'kubernetes':
       return kubernetes;
     case 'linux':
       return linux;
-    case 'sqlalchemy':
-      return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'spring':
+      return spring;
+    case 'jenkins':
+      return jenkins;
+    case 'websocket':
+      return websocket;
+    case 'figma':
+      return figma;
     default:
       break;
   }
-}
+};
