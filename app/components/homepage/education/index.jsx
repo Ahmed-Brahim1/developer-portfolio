@@ -1,4 +1,3 @@
-"use client"
 // @flow strict
 
 import { educations } from "@/utils/data/educations";

@@ -1,10 +1,10 @@
-"use client"
-// @flow strict
-import { isValidEmail } from "@/utils/check-email";
-import axios from "axios";
+"use client"; // This ensures the component is only executed on the client side
+
 import { useState } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
+import { isValidEmail } from "@/utils/check-email";
+import axios from "axios";
 
 function ContactForm() {
   const [error, setError] = useState({ email: false, required: false });
@@ -31,7 +31,7 @@ function ContactForm() {
       return;
     } else {
       setError({ ...error, required: false });
-    };
+    }
 
     try {
       setIsLoading(true);
@@ -50,7 +50,7 @@ function ContactForm() {
       toast.error(error?.response?.data?.message);
     } finally {
       setIsLoading(false);
-    };
+    }
   };
 
   return (
@@ -103,29 +103,27 @@ function ContactForm() {
             />
           </div>
           <div className="flex flex-col items-center gap-3">
-            {error.required && <p className="text-sm text-red-400">
-              All fiels are required!
-            </p>}
+            {error.required && <p className="text-sm text-red-400">All fields are required!</p>}
             <button
               className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               role="button"
               onClick={handleSendMail}
               disabled={isLoading}
             >
-              {
-                isLoading ?
-                <span>Sending Message...</span>:
+              {isLoading ? (
+                <span>Sending Message...</span>
+              ) : (
                 <span className="flex items-center gap-1">
                   Send Message
                   <TbMailForward size={20} />
                 </span>
-              }
+              )}
             </button>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ContactForm;
