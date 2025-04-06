@@ -1,4 +1,7 @@
+'use client';
+
 // @flow strict
+
 
 
 
