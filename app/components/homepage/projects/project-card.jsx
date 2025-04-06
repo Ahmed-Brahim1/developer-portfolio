@@ -1,4 +1,4 @@
-'use client';
+"use client"
 // @flow strict
 
 import * as React from 'react';

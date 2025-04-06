@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 // @flow strict
 import { timeConverter } from '@/utils/time-converter';
