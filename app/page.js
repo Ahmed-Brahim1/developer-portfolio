@@ -6,7 +6,6 @@ import Experience from "./components/homepage/experience";
 import Skills from "./components/homepage/skills";
 import Projects from "./components/homepage/projects";
 import Education from "./components/homepage/education";
-import ContactSection from "./components/homepage/contact";
 
 
 
@@ -15,6 +14,7 @@ import ContactSection from "./components/homepage/contact";
 
 
 // Dynamically import the client-side components
+const ContactSection = dynamic(() => import("./components/homepage/contact"), { ssr: false });
 
 
 
