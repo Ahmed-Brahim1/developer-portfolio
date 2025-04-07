@@ -12,8 +12,8 @@ import Education from "./components/homepage/education";
 
 
 
-
 // Dynamically import the client-side components
+const Education = dynamic(() => import("./components/homepage/education"), { ssr: false });
 const ContactSection = dynamic(() => import("./components/homepage/contact"), { ssr: false });
 
 
