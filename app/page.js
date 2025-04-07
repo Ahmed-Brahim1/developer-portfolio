@@ -1,3 +1,4 @@
+"use client";
 import dynamic from 'next/dynamic'; // Import dynamic for client-side rendering
 import AboutSection from "./components/homepage/about";
 import HeroSection from "./components/homepage/hero-section";
