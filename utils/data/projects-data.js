@@ -2,7 +2,7 @@ export const projectsData = [
     {
         id: 1,
         name: 'CRM For Travel Agency',
-        description: "As a Full Stack Developer, I designed and implemented a scalable real-time communication system ensuring seamless data exchange between frontend and backend. I developed responsive and high-performance user interfaces while optimizing backend processes for efficiency. Additionally, I built data-driven solutions for monitoring, visualization, and reporting to enhance decision-making and system analysis.",
+        description: "As a Full Stack Developer, I worked on a CRM platform designed for a travel agency, focusing on the Reporting and Analytics module. I developed features that aggregate data from various parts of the system to support performance tracking and business analysis. This helped the agency gain valuable insights and make informed decisions through customized reports and visualizations.",
         tools: ['Java', 'Spring Boot', 'Angular', 'Hibernate', 'Jenkins', 'Docker', 'PostgreSQL', 'WebSocket'],
         role: 'Full Stack Developer',
         code: '',
