@@ -20,7 +20,7 @@ export const projectsData = [
     {
         id: 3,
         name: 'Programming Challenge Platform',
-        description: "During my tenure at Proxym IT, I was responsible for developing a dynamic programming challenge platform that enabled users to engage in coding exercises and quizzes with real-time performance tracking. I designed and implemented an analytics module to assess user engagement, tracking the most completed quizzes and most visited challenges. Additionally, I integrated an email notification system to alert users about new responses and activities.",
+        description: "During my tenure at Proxym IT, I was responsible for developing a dynamic programming challenge platform that enabled users to engage in coding exercises and quizzes. I designed and implemented an analytics module to assess user engagement, tracking the most completed quizzes and most visited challenges. Additionally, I integrated an email notification system to alert users about new responses and activities.",
         tools: ['Java', 'Spring Boot', 'Angular', 'Hibernate', 'JavaMail', 'MySQL', 'Git', 'Jira'],
         code: '',
         role: 'Full Stack Developer',
